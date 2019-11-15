@@ -1,0 +1,22 @@
+// color
+$color-white:white;
+$color-orange:#eb7a35;
+$color-orange2:#f8b75e;
+$color-orange3:#f49e4d;
+$color-gray:#4a4a4a;
+$color-black:#131315;
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

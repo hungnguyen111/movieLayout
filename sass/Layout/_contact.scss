@@ -1,0 +1,13 @@
+.contact{
+    text-align: center;
+    p{
+        color: gray;
+        font-size: 23px;
+        font-weight: 300;
+    }
+    span{
+        color: $color-orange;
+        font-size: 46px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,43 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    .navbar-brand{
+        img{
+            width: 220px;
+            @include mediaQuery('small'){
+                width: 180px;
+            }
+        }
+    }
+    .bg-dark{
+        background-color: transparent!important;
+    }
+    #movieNavbar{
+        .navbar-nav{
+            border-bottom: 1px solid rgba(225, 225, 225, .2);
+            .nav-item{
+                &::after{
+                    content: '';
+                    width: 0;
+                    height: 3px;
+                    background-image: -webkit-gradient(linear,left top, right top,from(#fbbd61),to(#ec7532));
+                    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+                    display: block;
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+                & + .active::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

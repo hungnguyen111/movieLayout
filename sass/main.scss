@@ -1,0 +1,17 @@
+@import './Base/reset';
+
+@import './Helpers/variable';
+@import './Helpers/mixin';
+@import './Helpers/extend';
+@import './Helpers/function';
+
+@import './Layout/header';
+@import './Layout/Carousel.scss';
+@import './Layout/newIn';
+@import './Layout/showtimes';
+@import './Layout/comingsoon';
+@import './Layout/comingsoonFilm';
+@import './Layout/contact';
+@import './Layout/footer';
+
+@import './Componant/button';

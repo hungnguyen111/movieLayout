@@ -1,0 +1,41 @@
+footer{
+    .footer__top{
+        background-color: black;
+    }
+    .footer__content{
+        .footer__items{
+            h6{
+                color: $color-orange;
+                font-size: 1rem;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+            li{
+                list-style: none;
+                &:hover{
+                    a,i{
+                        color: $color-orange;
+                        transition: all .5s;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                    padding: 15px 0;
+                }
+            }
+        }
+        .footer__items3{
+            i{
+                color: gray;
+            }
+        }
+    }
+    .copyright{
+        margin-top: 30px;
+        padding: 10px;
+        color: white;
+        border-top: 1px solid gray;
+    }
+}

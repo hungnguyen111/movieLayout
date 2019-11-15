@@ -1,0 +1,44 @@
+
+@mixin textStyle($fs,$fw,$color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin boderStyle($bg,$border,$width){
+    background-color: $bg;
+    border: 2px solid $border;
+    width: $width;
+    height: $width;
+    line-height: $width;
+    text-align: center;
+    border-radius: 50%;
+}
+
+@mixin mediaQuery($sceen){
+    @if map-has-key($map: $breakpoints , $key: $sceen){
+        $value: map-get($map: $breakpoints , $key: $sceen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else{
+        @warn "`{$screen}` khong on tai";
+    }
+}
+
+@mixin h2Before($color,$fs){
+    font-size: $fs;
+    color: $color;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        right: auto;
+        display: block;
+        background-image: linear-gradient(to right,#fbbd61,#ec7532);
+    }
+}
